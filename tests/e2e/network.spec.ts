@@ -1,0 +1,100 @@
+import { expect, test } from "@playwright/test";
+
+test.use({ reducedMotion: "reduce" });
+
+test("vistas comparten cursor, condiciones capturadas y omisiones causales", async ({ page }) => {
+  const sent: string[] = [];
+  page.on("request", request => { if (request.method() === "POST" || request.url().includes("tienda.example")) sent.push(request.url()); });
+  await page.goto("/");
+  await page.getByLabel("Simulación", { exact: true }).check();
+  await page.getByLabel("Entrada al servidor").selectOption("balanced");
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await page.getByRole("button", { name: "Red", exact: true }).click();
+  const network = page.getByRole("region", { name: "Detalle de red" });
+  await expect(network.getByRole("button", { name: /DNS resuelve/ })).toBeVisible();
+  await network.getByRole("button", { name: /TLS protege/ }).click();
+  const metadata = await page.locator(".xray-metadata").textContent();
+  await page.getByRole("button", { name: "Infraestructura", exact: true }).click();
+  await page.getByRole("button", { name: "3Internals", exact: true }).click();
+  await expect(page.locator(".xray-metadata")).toHaveText(metadata!);
+  const infrastructure = page.getByRole("region", { name: "Detalle de infraestructura" });
+  await expect(infrastructure.getByRole("button", { name: /El proxy recibe/ })).toBeVisible();
+  await expect(infrastructure.getByRole("button", { name: /balanceador selecciona app-1/ })).toBeVisible();
+  await page.getByLabel("Caché DNS válida").check();
+  await expect(infrastructure.locator(".capture-settings")).toContainText("sin caché DNS");
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await page.getByRole("button", { name: "Red", exact: true }).click();
+  await expect(network.getByText("Caché DNS válida: no se hace otra consulta.")).toBeVisible();
+  await expect(network.getByRole("button", { name: /conexión TCP/ })).toBeVisible();
+  await expect(network.getByRole("button", { name: /TLS protege/ })).toBeVisible();
+  await page.getByLabel("Reutilizar conexión abierta").check();
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await expect(network.getByRole("button", { name: /DNS resuelve|conexión TCP|TLS protege/ })).toHaveCount(0);
+  await expect(network.getByText("Conexión ya abierta: no se repite la preparación.")).toHaveCount(3);
+  await page.getByLabel("Reutilizar conexión abierta").uncheck();
+  await page.getByLabel("Destino ilustrativo").selectOption("local");
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await expect(network.getByText("IP literal: no se necesita resolver un nombre.")).toBeVisible();
+  await expect(network.getByText("HTTP sin TLS en este escenario.")).toBeVisible();
+  expect(sent).toEqual([]);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: "test-results/network-desktop.png", fullPage: true });
+});
+
+test("captura real no inventa conexiones y favoritos no muestra infraestructura remota", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Comprar ahora" }).click();
+  await expect(page.getByRole("status")).toContainText("Pedido real creado");
+  await page.getByRole("button", { name: "Red", exact: true }).click();
+  const network = page.getByRole("region", { name: "Detalle de red" });
+  await expect(network.getByText("Sin instrumentar: esta captura no permite afirmar si ocurrió ni cómo.")).toHaveCount(3);
+  await expect(network.getByRole("button", { name: /DNS resuelve|conexión TCP|TLS protege/ })).toHaveCount(0);
+  await page.getByRole("button", { name: "Infraestructura", exact: true }).click();
+  const infrastructure = page.getByRole("region", { name: "Detalle de infraestructura" });
+  await expect(infrastructure.getByText("Roles externos sin instrumentar. No inferimos su presencia o ausencia.")).toBeVisible();
+  await infrastructure.getByRole("button", { name: /Se reconoce la credencial/ }).click();
+  await expect(page.locator(".current-event")).toContainText("Se reconoce la credencial");
+  await page.getByRole("button", { name: "Guardar en favoritos" }).click();
+  await expect(infrastructure.getByText("Esta operación permanece local.")).toBeVisible();
+  await page.getByRole("button", { name: "Red", exact: true }).click();
+  await expect(network.getByText("Esta operación permanece local.")).toBeVisible();
+  await expect(network.getByRole("button")).toHaveCount(0);
+});
+
+test("fallos y duplicados cambian los componentes alcanzados", async ({ page }) => {
+  await page.goto("/");
+  await page.getByLabel("Simulación", { exact: true }).check();
+  await page.getByLabel("Entrada al servidor").selectOption("balanced");
+  await page.getByLabel("Inyectar condición").selectOption("network");
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await page.getByRole("button", { name: "Infraestructura", exact: true }).click();
+  const infrastructure = page.getByRole("region", { name: "Detalle de infraestructura" });
+  await expect(infrastructure.getByRole("button", { name: /El proxy recibe|balanceador selecciona|guarda el pedido/ })).toHaveCount(0);
+  await expect(infrastructure.getByText("No alcanzado: falló la entrega antes de la entrada.")).toBeVisible();
+  await page.getByLabel("Inyectar condición").selectOption("duplicate");
+  await page.getByRole("button", { name: "Ejecutar escenario" }).click();
+  await expect(infrastructure.getByRole("button", { name: /Se guarda el pedido temporal/ })).toHaveCount(1);
+  await expect(infrastructure.getByRole("button", { name: /La clave recupera el pedido previo/ })).toHaveCount(1);
+  await expect(infrastructure.getByRole("button", { name: /El proxy recibe/ })).toHaveCount(2);
+  await page.getByRole("button", { name: "Red", exact: true }).click();
+  const network = page.getByRole("region", { name: "Detalle de red" });
+  await expect(network.getByRole("button", { name: /conexión TCP/ })).toHaveCount(1);
+  await expect(network.getByRole("button", { name: /Se transmite la solicitud/ })).toHaveCount(2);
+});
+
+test("vistas y selección funcionan con teclado en móvil", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  const button = page.getByRole("button", { name: "Red", exact: true });
+  await button.focus();
+  await page.keyboard.press("Enter");
+  await expect(button).toHaveAttribute("aria-pressed", "true");
+  const dns = page.getByRole("region", { name: "Detalle de red" }).getByRole("button", { name: /DNS resuelve/ });
+  await dns.focus();
+  await page.keyboard.press("Enter");
+  await expect(dns).toHaveAttribute("aria-current", "step");
+  await expect(page.locator(".current-event")).toContainText("DNS resuelve el nombre");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: "test-results/network-mobile.png", fullPage: true });
+});

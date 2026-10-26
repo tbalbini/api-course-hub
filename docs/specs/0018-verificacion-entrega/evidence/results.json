@@ -1,0 +1,3494 @@
+{
+  "environment": {
+    "os": "macOS 26.6.2",
+    "arch": "arm64",
+    "cpu": "Apple M1",
+    "node": "24.14.0",
+    "npm": "11.9.0",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "vitest": "5.0.5",
+    "playwright": "1.64.1",
+    "browsers": {
+      "chromium": "156.0.8078.4",
+      "firefox": "157.0",
+      "webkit": "27.2"
+    }
+  },
+  "identitySha256": "cf4fde8c958edca2b0ef7a194da164209a40f4496ec34fadbb90a81167c416cb",
+  "runs": [
+    {
+      "command": "npm run test:delivery",
+      "startTime": "2026-10-23T03:24:28.638Z",
+      "duration": 355308.911,
+      "expected": 176,
+      "skipped": 0,
+      "unexpected": 30,
+      "flaky": 0
+    },
+    {
+      "command": "npm run test:delivery -- --last-failed",
+      "startTime": "2026-10-23T03:30:35.397Z",
+      "duration": 53399.803,
+      "expected": 30,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "aggregate": {
+    "passed": 206,
+    "failed": 0,
+    "byBrowser": {
+      "chromium": 172,
+      "firefox": 17,
+      "webkit": 17
+    },
+    "logicPassed": 712
+  },
+  "method": "One sample per route/width/browser; fresh context per route, widths701/390 reuse cache; server warm; local without throttling. encodedBodySize is not transferSize. Repeated cases replace the initial failed test-setup result.",
+  "navigationSummary": [
+    {
+      "browser": "chromium",
+      "width": 1440,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0.9,
+        "median": 1.1,
+        "max": 22.7
+      },
+      "domContentLoadedMs": {
+        "min": 14.4,
+        "median": 20,
+        "max": 58.8
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 300855
+      }
+    },
+    {
+      "browser": "chromium",
+      "width": 701,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0.8,
+        "median": 0.9,
+        "max": 89.8
+      },
+      "domContentLoadedMs": {
+        "min": 5.1,
+        "median": 5.8,
+        "max": 96.3
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 238611
+      }
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0.8,
+        "median": 0.9,
+        "max": 1.9
+      },
+      "domContentLoadedMs": {
+        "min": 4.8,
+        "median": 5.2,
+        "max": 7.1
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 238611
+      }
+    },
+    {
+      "browser": "firefox",
+      "width": 1440,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 2,
+        "median": 13,
+        "max": 42
+      },
+      "domContentLoadedMs": {
+        "min": 35,
+        "median": 60,
+        "max": 405
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 300855
+      }
+    },
+    {
+      "browser": "firefox",
+      "width": 701,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0,
+        "median": 1,
+        "max": 15
+      },
+      "domContentLoadedMs": {
+        "min": 9,
+        "median": 14,
+        "max": 54
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 238611
+      }
+    },
+    {
+      "browser": "firefox",
+      "width": 390,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0,
+        "median": 3,
+        "max": 18
+      },
+      "domContentLoadedMs": {
+        "min": 9,
+        "median": 13,
+        "max": 54
+      },
+      "encodedScriptBytes": {
+        "min": 174671,
+        "median": 190872,
+        "max": 238611
+      }
+    },
+    {
+      "browser": "webkit",
+      "width": 1440,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 1,
+        "median": 2,
+        "max": 5
+      },
+      "domContentLoadedMs": {
+        "min": 17,
+        "median": 22,
+        "max": 77
+      },
+      "encodedScriptBytes": {
+        "min": 174927,
+        "median": 191146,
+        "max": 301274
+      }
+    },
+    {
+      "browser": "webkit",
+      "width": 701,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "domContentLoadedMs": {
+        "min": 7,
+        "median": 9,
+        "max": 17
+      },
+      "encodedScriptBytes": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      }
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "samples": 15,
+      "ttfbMs": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "domContentLoadedMs": {
+        "min": 7,
+        "median": 10,
+        "max": 17
+      },
+      "encodedScriptBytes": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "browser": "chromium",
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 25.899999976158142,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.799999952316284,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.800000071525574,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 1.5999999046325684,
+      "domContentLoadedMs": 25.40000009536743,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 6.100000023841858,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5.5,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 1.2999999523162842,
+      "domContentLoadedMs": 23.200000047683716,
+      "scriptBytes": 300855,
+      "scriptCount": 17
+    },
+    {
+      "browser": "chromium",
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.699999928474426,
+      "scriptBytes": 238611,
+      "scriptCount": 13
+    },
+    {
+      "browser": "chromium",
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 6.599999904632568,
+      "scriptBytes": 238611,
+      "scriptCount": 13
+    },
+    {
+      "browser": "chromium",
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 4.700000047683716,
+      "domContentLoadedMs": 39.5,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 10.799999952316284,
+      "domContentLoadedMs": 16.59999990463257,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 1.899999976158142,
+      "domContentLoadedMs": 6.700000047683716,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 22.700000047683716,
+      "domContentLoadedMs": 58.799999952316284,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 89.80000007152557,
+      "domContentLoadedMs": 96.29999995231628,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 1.2999999523162842,
+      "domContentLoadedMs": 7.100000023841858,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 4.5,
+      "domContentLoadedMs": 28.700000047683716,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 0.9000000953674316,
+      "domContentLoadedMs": 5.899999976158142,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.600000023841858,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 19.399999976158142,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5.100000023841858,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18.90000009536743,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.200000047683716,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18.899999976158142,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.100000023841858,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 0.7999999523162842,
+      "domContentLoadedMs": 4.899999976158142,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 20,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.300000071525574,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 4.799999952316284,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18.300000071525574,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.799999952316284,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 4.900000095367432,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 7.899999976158142,
+      "domContentLoadedMs": 26.5,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 1.2000000476837158,
+      "domContentLoadedMs": 6.100000023841858,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.600000023841858,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18.300000071525574,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 1.5,
+      "domContentLoadedMs": 5.899999976158142,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.199999928474426,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 1.0999999046325684,
+      "domContentLoadedMs": 14.400000095367432,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.300000071525574,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 0.9000000953674316,
+      "domContentLoadedMs": 4.900000095367432,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "chromium",
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 18.5,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5.199999928474426,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "chromium",
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 0.7999999523162842,
+      "domContentLoadedMs": 5,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 36,
+      "domContentLoadedMs": 405,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 34,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 31,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 42,
+      "domContentLoadedMs": 160,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 14,
+      "domContentLoadedMs": 54,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 41,
+      "scriptBytes": 195546,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 7,
+      "domContentLoadedMs": 46,
+      "scriptBytes": 300855,
+      "scriptCount": 17
+    },
+    {
+      "browser": "firefox",
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 14,
+      "scriptBytes": 238611,
+      "scriptCount": 13
+    },
+    {
+      "browser": "firefox",
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 238611,
+      "scriptCount": 13
+    },
+    {
+      "browser": "firefox",
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 60,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 15,
+      "scriptBytes": 182987,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 71,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 19,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 174671,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 54,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 31,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 10,
+      "domContentLoadedMs": 25,
+      "scriptBytes": 186432,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 10,
+      "domContentLoadedMs": 70,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 14,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 6,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 192170,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 72,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 19,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 54,
+      "scriptBytes": 183502,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 8,
+      "domContentLoadedMs": 44,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 193100,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 27,
+      "domContentLoadedMs": 68,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 190872,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 11,
+      "domContentLoadedMs": 54,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 189141,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 15,
+      "domContentLoadedMs": 71,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 6,
+      "domContentLoadedMs": 49,
+      "scriptBytes": 178023,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 59,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 193739,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 18,
+      "domContentLoadedMs": 50,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 189222,
+      "scriptCount": 10
+    },
+    {
+      "browser": "firefox",
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 35,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "firefox",
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 209685,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 77,
+      "scriptBytes": 195820,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 15,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 25,
+      "scriptBytes": 195820,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 52,
+      "scriptBytes": 301274,
+      "scriptCount": 17
+    },
+    {
+      "browser": "webkit",
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 13
+    },
+    {
+      "browser": "webkit",
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 13
+    },
+    {
+      "browser": "webkit",
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 183243,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 22,
+      "scriptBytes": 174927,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 20,
+      "scriptBytes": 186695,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 192444,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 183765,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 22,
+      "scriptBytes": 193371,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 25,
+      "scriptBytes": 191146,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 19,
+      "scriptBytes": 189415,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 29,
+      "scriptBytes": 178279,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 27,
+      "scriptBytes": 194021,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 15,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 189485,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 12,
+      "scriptBytes": 0,
+      "scriptCount": 10
+    },
+    {
+      "browser": "webkit",
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 25,
+      "scriptBytes": 209982,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    },
+    {
+      "browser": "webkit",
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 11
+    }
+  ],
+  "http": [
+    {
+      "browser": "chromium",
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 6.073,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "chromium",
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 3.31,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "chromium",
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 2.573,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "chromium",
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 2.42,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "chromium",
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 2.508,
+      "error": "FORBIDDEN"
+    },
+    {
+      "browser": "chromium",
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 2.46,
+      "error": "UNAUTHENTICATED"
+    },
+    {
+      "browser": "firefox",
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 7.619873046875,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "firefox",
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 5.0009765625,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "firefox",
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 2.18505859375,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "firefox",
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 3.070068359375,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "firefox",
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 2.1650390625,
+      "error": "FORBIDDEN"
+    },
+    {
+      "browser": "firefox",
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 2.72412109375,
+      "error": "UNAUTHENTICATED"
+    },
+    {
+      "browser": "webkit",
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 36.203,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "webkit",
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 8.28,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "webkit",
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 7.89,
+      "orderStatus": "created"
+    },
+    {
+      "browser": "webkit",
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 4.803,
+      "orderStatus": "confirmed"
+    },
+    {
+      "browser": "webkit",
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 3.796,
+      "error": "FORBIDDEN"
+    },
+    {
+      "browser": "webkit",
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 3.046,
+      "error": "UNAUTHENTICATED"
+    }
+  ],
+  "contrast": {
+    "chromium": [
+      {
+        "foreground": "--ink",
+        "background": "--canvas",
+        "ratio": 16.95090962111378
+      },
+      {
+        "foreground": "--ink",
+        "background": "--surface",
+        "ratio": 15.696017462271247
+      },
+      {
+        "foreground": "--ink",
+        "background": "--raised",
+        "ratio": 14.112061668546422
+      },
+      {
+        "foreground": "--body",
+        "background": "--canvas",
+        "ratio": 9.164898214790986
+      },
+      {
+        "foreground": "--body",
+        "background": "--surface",
+        "ratio": 8.486411976388434
+      },
+      {
+        "foreground": "--body",
+        "background": "--raised",
+        "ratio": 7.630009933625217
+      },
+      {
+        "foreground": "--muted",
+        "background": "--canvas",
+        "ratio": 7.414067743310245
+      },
+      {
+        "foreground": "--muted",
+        "background": "--surface",
+        "ratio": 6.865197170334111
+      },
+      {
+        "foreground": "--muted",
+        "background": "--raised",
+        "ratio": 6.172399213199291
+      },
+      {
+        "foreground": "--accent",
+        "background": "--canvas",
+        "ratio": 14.624435975757315
+      },
+      {
+        "foreground": "--accent",
+        "background": "--surface",
+        "ratio": 13.541774900707193
+      },
+      {
+        "foreground": "--accent",
+        "background": "--raised",
+        "ratio": 12.175213423386515
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--canvas",
+        "ratio": 10.24638977828135
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--surface",
+        "ratio": 9.487839678221015
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--raised",
+        "ratio": 8.530379057119244
+      },
+      {
+        "foreground": "--contract",
+        "background": "--canvas",
+        "ratio": 10.208880933448867
+      },
+      {
+        "foreground": "--contract",
+        "background": "--surface",
+        "ratio": 9.45310764928335
+      },
+      {
+        "foreground": "--contract",
+        "background": "--raised",
+        "ratio": 8.499151993603279
+      },
+      {
+        "foreground": "--data",
+        "background": "--canvas",
+        "ratio": 14.892638731717108
+      },
+      {
+        "foreground": "--data",
+        "background": "--surface",
+        "ratio": 13.790122348429446
+      },
+      {
+        "foreground": "--data",
+        "background": "--raised",
+        "ratio": 12.398499011970168
+      },
+      {
+        "foreground": "--error",
+        "background": "--canvas",
+        "ratio": 10.310963463391406
+      },
+      {
+        "foreground": "--error",
+        "background": "--surface",
+        "ratio": 9.547632911253665
+      },
+      {
+        "foreground": "--error",
+        "background": "--raised",
+        "ratio": 8.584138285786441
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--canvas",
+        "ratio": 12.117960238507157
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--surface",
+        "ratio": 11.220855975410446
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--raised",
+        "ratio": 10.08850887682157
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--canvas",
+        "ratio": 4.102008921940291
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--surface",
+        "ratio": 3.7983332522149773
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--raised",
+        "ratio": 3.415026341668703
+      },
+      {
+        "foreground": "--on-accent",
+        "background": "--accent",
+        "ratio": 12.725841807225578
+      }
+    ],
+    "firefox": [
+      {
+        "foreground": "--ink",
+        "background": "--canvas",
+        "ratio": 16.95090962111378
+      },
+      {
+        "foreground": "--ink",
+        "background": "--surface",
+        "ratio": 15.696017462271247
+      },
+      {
+        "foreground": "--ink",
+        "background": "--raised",
+        "ratio": 14.112061668546422
+      },
+      {
+        "foreground": "--body",
+        "background": "--canvas",
+        "ratio": 9.164898214790986
+      },
+      {
+        "foreground": "--body",
+        "background": "--surface",
+        "ratio": 8.486411976388434
+      },
+      {
+        "foreground": "--body",
+        "background": "--raised",
+        "ratio": 7.630009933625217
+      },
+      {
+        "foreground": "--muted",
+        "background": "--canvas",
+        "ratio": 7.414067743310245
+      },
+      {
+        "foreground": "--muted",
+        "background": "--surface",
+        "ratio": 6.865197170334111
+      },
+      {
+        "foreground": "--muted",
+        "background": "--raised",
+        "ratio": 6.172399213199291
+      },
+      {
+        "foreground": "--accent",
+        "background": "--canvas",
+        "ratio": 14.624435975757315
+      },
+      {
+        "foreground": "--accent",
+        "background": "--surface",
+        "ratio": 13.541774900707193
+      },
+      {
+        "foreground": "--accent",
+        "background": "--raised",
+        "ratio": 12.175213423386515
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--canvas",
+        "ratio": 10.24638977828135
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--surface",
+        "ratio": 9.487839678221015
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--raised",
+        "ratio": 8.530379057119244
+      },
+      {
+        "foreground": "--contract",
+        "background": "--canvas",
+        "ratio": 10.208880933448867
+      },
+      {
+        "foreground": "--contract",
+        "background": "--surface",
+        "ratio": 9.45310764928335
+      },
+      {
+        "foreground": "--contract",
+        "background": "--raised",
+        "ratio": 8.499151993603279
+      },
+      {
+        "foreground": "--data",
+        "background": "--canvas",
+        "ratio": 14.892638731717108
+      },
+      {
+        "foreground": "--data",
+        "background": "--surface",
+        "ratio": 13.790122348429446
+      },
+      {
+        "foreground": "--data",
+        "background": "--raised",
+        "ratio": 12.398499011970168
+      },
+      {
+        "foreground": "--error",
+        "background": "--canvas",
+        "ratio": 10.310963463391406
+      },
+      {
+        "foreground": "--error",
+        "background": "--surface",
+        "ratio": 9.547632911253665
+      },
+      {
+        "foreground": "--error",
+        "background": "--raised",
+        "ratio": 8.584138285786441
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--canvas",
+        "ratio": 12.117960238507157
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--surface",
+        "ratio": 11.220855975410446
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--raised",
+        "ratio": 10.08850887682157
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--canvas",
+        "ratio": 4.102008921940291
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--surface",
+        "ratio": 3.7983332522149773
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--raised",
+        "ratio": 3.415026341668703
+      },
+      {
+        "foreground": "--on-accent",
+        "background": "--accent",
+        "ratio": 12.725841807225578
+      }
+    ],
+    "webkit": [
+      {
+        "foreground": "--ink",
+        "background": "--canvas",
+        "ratio": 16.95090962111378
+      },
+      {
+        "foreground": "--ink",
+        "background": "--surface",
+        "ratio": 15.696017462271247
+      },
+      {
+        "foreground": "--ink",
+        "background": "--raised",
+        "ratio": 14.112061668546422
+      },
+      {
+        "foreground": "--body",
+        "background": "--canvas",
+        "ratio": 9.164898214790986
+      },
+      {
+        "foreground": "--body",
+        "background": "--surface",
+        "ratio": 8.486411976388434
+      },
+      {
+        "foreground": "--body",
+        "background": "--raised",
+        "ratio": 7.630009933625217
+      },
+      {
+        "foreground": "--muted",
+        "background": "--canvas",
+        "ratio": 7.414067743310245
+      },
+      {
+        "foreground": "--muted",
+        "background": "--surface",
+        "ratio": 6.865197170334111
+      },
+      {
+        "foreground": "--muted",
+        "background": "--raised",
+        "ratio": 6.172399213199291
+      },
+      {
+        "foreground": "--accent",
+        "background": "--canvas",
+        "ratio": 14.624435975757315
+      },
+      {
+        "foreground": "--accent",
+        "background": "--surface",
+        "ratio": 13.541774900707193
+      },
+      {
+        "foreground": "--accent",
+        "background": "--raised",
+        "ratio": 12.175213423386515
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--canvas",
+        "ratio": 10.24638977828135
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--surface",
+        "ratio": 9.487839678221015
+      },
+      {
+        "foreground": "--consumer",
+        "background": "--raised",
+        "ratio": 8.530379057119244
+      },
+      {
+        "foreground": "--contract",
+        "background": "--canvas",
+        "ratio": 10.208880933448867
+      },
+      {
+        "foreground": "--contract",
+        "background": "--surface",
+        "ratio": 9.45310764928335
+      },
+      {
+        "foreground": "--contract",
+        "background": "--raised",
+        "ratio": 8.499151993603279
+      },
+      {
+        "foreground": "--data",
+        "background": "--canvas",
+        "ratio": 14.892638731717108
+      },
+      {
+        "foreground": "--data",
+        "background": "--surface",
+        "ratio": 13.790122348429446
+      },
+      {
+        "foreground": "--data",
+        "background": "--raised",
+        "ratio": 12.398499011970168
+      },
+      {
+        "foreground": "--error",
+        "background": "--canvas",
+        "ratio": 10.310963463391406
+      },
+      {
+        "foreground": "--error",
+        "background": "--surface",
+        "ratio": 9.547632911253665
+      },
+      {
+        "foreground": "--error",
+        "background": "--raised",
+        "ratio": 8.584138285786441
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--canvas",
+        "ratio": 12.117960238507157
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--surface",
+        "ratio": 11.220855975410446
+      },
+      {
+        "foreground": "--persistent",
+        "background": "--raised",
+        "ratio": 10.08850887682157
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--canvas",
+        "ratio": 4.102008921940291
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--surface",
+        "ratio": 3.7983332522149773
+      },
+      {
+        "foreground": "--control-border",
+        "background": "--raised",
+        "ratio": 3.415026341668703
+      },
+      {
+        "foreground": "--on-accent",
+        "background": "--accent",
+        "ratio": 12.725841807225578
+      }
+    ]
+  },
+  "cases": [
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-2/9: conservar API no conserva ABI y lifetime impide la invocación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 719
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-3/9: Wasm ejecuta y produce trap real, sin compilar al abrir o reproducir",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 543
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-4/9: cada byte lleva al buffer del cursor y EOF truncado no inventa SQL",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 468
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-5: JSON y nombres no se evalúan, y schema no concede permiso",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 447
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-6/9: resultado incompatible no revierte efecto y el adaptador traduce el contrato",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 421
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-7/8: seis ejecuciones y doce respuestas comprobadas completan y persisten capítulo12",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2123
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-1/9: profundidad y X Ray conservan datos, captura, panel y borradores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 729
+    },
+    {
+      "file": "advanced.spec.ts",
+      "title": "AC-1/8: teclado, móvil y modo de sesión permiten explorar sin almacenamiento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 404
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-1/2/3/4: siete desafíos exigen resultado y causa juntos, sin peticiones de negocio",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2190
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-2/4/5: una causa correcta no basta; reintentar y reproducir conservan el logro",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 479
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-2/5: JSON inválido es recuperable y permisos y body se comprueban por separado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 439
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-4/5: historial conserva borrador y captura, recarga solo logros y los otros almacenes",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 506
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-4/5: almacenamiento bloqueado permite resolver en sesión y query desconocida es segura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 310
+    },
+    {
+      "file": "challenges.spec.ts",
+      "title": "AC-5: teclado, foco y controles conservan espacio en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 939
+    },
+    {
+      "file": "click-lab.spec.ts",
+      "title": "compra real, consulta, reproducción sin efectos y acción local",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 881
+    },
+    {
+      "file": "click-lab.spec.ts",
+      "title": "el servidor distingue 401 de 403 desde la consola",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1114
+    },
+    {
+      "file": "click-lab.spec.ts",
+      "title": "simular fallo antes de entrega y respuesta perdida cambia el flujo sin enviar HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 640
+    },
+    {
+      "file": "click-lab.spec.ts",
+      "title": "perder la respuesta después de guardar conserva la clave y el payload al reintentar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 574
+    },
+    {
+      "file": "click-lab.spec.ts",
+      "title": "móvil y teclado mantienen la consola operable sin desbordar la página",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 526
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "la selección espera a que sus handlers estén conectados, incluso con JavaScript retrasado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 580
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "proyecta campos GraphQL y cambia el flujo gRPC sin tráfico real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 710
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "polling y suscripción separan comando y observación que resuelve la incertidumbre",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1108
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "SOAP y XML RPC muestran contratos XML válidos y evaluación razonada",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1133
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "HTTP real crea, consulta y confirma con permisos y reproducción sin efectos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 993
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "una creación con respuesta perdida conserva clave y recupera el mismo pedido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 591
+    },
+    {
+      "file": "comparison.spec.ts",
+      "title": "navegación por teclado y móvil sin desbordar la página",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 705
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-2/3: JSON inválido, validación previa y forma válida con negocio incorrecto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 531
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-4: renombre rompe, coexistencia conserva v1 y dirección inversa falla",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 587
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-4: extras tolerados o estrictos y contrato de errores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 637
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-5: offset repite tras inserción, cursor evita ese duplicado y se valida",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 481
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-6/9: reintentos, conflicto, retención y replay sin HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 571
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-7: descargas reales reflejan el diseño y AsyncAPI es independiente",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 340
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-8: cuatro actividades y feedback razonado completan el desafío",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 830
+    },
+    {
+      "file": "contracts.spec.ts",
+      "title": "AC-1: móvil, enlaces, teclado y pausa conservan contexto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1029
+    },
+    {
+      "file": "course-regressions.spec.ts",
+      "title": "AC-1, AC-2, AC-5: progreso accesible y programa antes de exploración secundaria",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 798
+    },
+    {
+      "file": "course-regressions.spec.ts",
+      "title": "AC-3, AC-4: dos pestañas conservan la unión de logros y una lectura inválida no borra los anteriores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 732
+    },
+    {
+      "file": "course-regressions.spec.ts",
+      "title": "AC-3, AC-4: los logros de primeros principios también sobreviven a otra pestaña",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 599
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "el recorrido conserva logros anteriores y no completa capítulos por visitarlos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1103
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "actividades y razonamiento de red persisten sin completar por solo elegir una respuesta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 712
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "continuar recupera pestaña y profundidad, sin guardar parámetros arbitrarios",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 411
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "el comparador conserva operaciones exploradas y razonamiento al recargar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 842
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "almacenamiento bloqueado permite aprender y conserva logros durante la navegación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 362
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "datos inválidos y cambios de otra pestaña mantienen un resumen válido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 438
+    },
+    {
+      "file": "course.spec.ts",
+      "title": "áreas orientativas, teclado, 404 y navegación móvil mantienen estados honestos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 945
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 838
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 802
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 799
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1072
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1359
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 923
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 628
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 559
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 573
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 673
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 711
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 460
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 569
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 484
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 472
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 715
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 461
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 5227
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 3600
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1358
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1377
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1559
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1683
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1899
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 2077
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1707
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 2025
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1574
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1437
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1206
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1212
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1054
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1723
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 349
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 2229
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1098
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 928
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 921
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1125
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1128
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1052
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1093
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1045
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1354
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1448
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 962
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1255
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 940
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1123
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1541
+    },
+    {
+      "file": "delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 820
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "SSE usa comando separado y reconectar sin historial deja el chat retrasado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 517
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "un ACK perdido reentrega el mismo id y sin filtros repite aplicaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 511
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "copias publicadas tienen otro offset, relectura conserva ids y agotamiento no salta registros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 440
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "pub/sub permite inspeccionar dos ramas y deja Analítica adelantada",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 389
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "SSE real recibe tres eventos en un GET y replay no abre otra conexión",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1857
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "EventSource cierra ante error sin inventar status HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 339
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "datos SSE fuera del contrato se rechazan y no se muestran como actualización",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 290
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "el capítulo exige actividades observadas y feedback razonado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 628
+    },
+    {
+      "file": "events.spec.ts",
+      "title": "teclado y móvil conservan ajustes, pausa y navegación sin desbordar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 936
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "función real, pila reversible, evaluación y progreso persistente",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 725
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "sustituir la implementación conserva o rompe el contrato del consumidor",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 442
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "DOM real trata entrada como texto y replay no repite mutaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 436
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "Anatomy distingue siete fronteras y concurrencia conserva cadenas separadas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1800
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "datos locales inválidos y almacenamiento bloqueado no impiden aprender",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 257
+    },
+    {
+      "file": "foundations.spec.ts",
+      "title": "consola y navegación funcionan por teclado y en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 398
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/: un rechazo del reintento conserva la creación incierta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 619
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/: un 502 con HTML conserva status, headers y body original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 555
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/: recibir headers antes de fallar la lectura no borra el Response",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 513
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/: un 201 sin pedido válido no libera la clave de creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 530
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/compare: un rechazo del reintento conserva la creación incierta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 615
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/compare: un 502 con HTML conserva status, headers y body original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 551
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/compare: recibir headers antes de fallar la lectura no borra el Response",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 550
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "/compare: un 201 sin pedido válido no libera la clave de creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 543
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "cinco áreas conservan jerarquía, contexto y acceso en escritorio, tablet y móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 6319
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "cada inspector referencia su propio encabezado, incluso en paneles ocultos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 409
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "los capítulos tienen enlaces propios y sus prácticas conservan borradores sin ejecutar efectos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 3750
+    },
+    {
+      "file": "front-regressions.spec.ts",
+      "title": "las fichas remotas abren el laboratorio y la pestaña correspondientes sin ejecutar peticiones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2398
+    },
+    {
+      "file": "network.spec.ts",
+      "title": "vistas comparten cursor, condiciones capturadas y omisiones causales",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1101
+    },
+    {
+      "file": "network.spec.ts",
+      "title": "captura real no inventa conexiones y favoritos no muestra infraestructura remota",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 670
+    },
+    {
+      "file": "network.spec.ts",
+      "title": "fallos y duplicados cambian los componentes alcanzados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 663
+    },
+    {
+      "file": "network.spec.ts",
+      "title": "vistas y selección funcionan con teclado en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 544
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "negocia JSON y texto, revalida con 304 y evalúa el capítulo HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 670
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "presets de pedido, permisos y métodos no soportados conservan status y body",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 856
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "rechaza edición fuera del contrato sin enviar tráfico",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 290
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "HTTP3 recupera contenido y UDP no inventa transporte fiable ni respuesta HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 591
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "GraphQL y RPC usan contratos compartidos y conservan campos entre pestañas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 533
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "JSON inválido recibido conserva status, headers y texto original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 268
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "respuesta de creación perdida conserva la solicitud al cambiar pestañas y reintenta la misma clave",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 411
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "un fallo al leer body no borra el Response ya recibido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 296
+    },
+    {
+      "file": "playground.spec.ts",
+      "title": "móvil y teclado navegan pestañas, mantienen el borrador y no desbordan",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 565
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-1/2/4/5/8: crea, confirma, distingue snapshot y estado actual y acredita resultados reales",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1219
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-5: recupera la creación B y repetir original usa B, no la anterior A",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 513
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-4/5/8: trace inválido conserva Response y operación sin aplicar Order ni logros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 309
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-4/5/8: order inválido conserva Response y operación sin aplicar Order ni logros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 310
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-5: PATCH lost conserva id y GET observa el efecto sin repetir escritura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 425
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-5: PATCH malformed conserva id y GET observa el efecto sin repetir escritura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 440
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-2/4: 401 y404 no cambian el último pedido y GET fallido no bloquea una creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 356
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-6: fuente y descarga coinciden con el archivo y hash incorporados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 241
+    },
+    {
+      "file": "project.spec.ts",
+      "title": "AC-1: teclado, reducción de movimiento y móvil conservan contexto sin desbordar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 328
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-2/3: alias y tildes encuentran fichas, AND y tema filtran sin resultados inventados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 351
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-4/5: relaciones, historial y recarga conservan URL y selección fuera del filtro",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 303
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-4: URL inválida se recupera y el texto de búsqueda no se interpreta como HTML",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 154
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-5: consulta desde captura HTTP real abre otra pestaña sin perder datos ni repetir operación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 467
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-6: guía tiene comandos, contrato, límites y enlaces reales sin modificar progreso",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 269
+    },
+    {
+      "file": "reference.spec.ts",
+      "title": "AC-1/7: teclado y móvil permiten buscar, saltar al detalle y consultar la guía",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 236
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-2/8: cada control de acceso detiene el negocio y consultar conserva estado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 605
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-3/4: formulario puede aplicar efecto oculto y preflight fallido impide JSON",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 416
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-3/4: wildcard con credentials no basta y CSRF puede rechazar con CORS permitido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 573
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-5: cada credencial tiene un mecanismo y sus propios fallos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 887
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-5: OIDC valida identidad para cliente y falla si se envía ID token a API",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 425
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-6: HTTP real conserva permisos, challenge y replay sin solicitudes",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 662
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-6: perder respuesta de creación mantiene identidad al cambiar pestaña",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 440
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-7: actividades reales y modelos alimentan evaluación con feedback",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 847
+    },
+    {
+      "file": "security.spec.ts",
+      "title": "AC-1/8: móvil y teclado mantienen contexto y navegación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1050
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-2/4/6: inventario opcional degrada y el obligatorio falla toda la respuesta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 422
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-2/3: arquitectura y roles cambian captura, fronteras y proyección",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 562
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-3/4/9: timeout conserva finalización tardía, inspector y replay sin red",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 524
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-5/6: circuito rechaza llamadas y half open recupera tras cooldown",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 403
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-5: caché antigua evita trabajo y TTL permite nueva lectura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 388
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-7: local hace rollback, saga recupera compensación y 2PC decisión",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 664
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-8: cuatro observaciones y explicación correcta completan desafío",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1068
+    },
+    {
+      "file": "systems.spec.ts",
+      "title": "AC-1: móvil, teclado, pausa y práctica J preservan contexto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1000
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "búsqueda, filtros combinados, ausencia de resultados y selección estable",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 642
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "las 49 facetas se pueden seleccionar y tienen explicación y asociaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1246
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "el mapa se conecta con filtros y conserva definido frente a posible",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 591
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "comparar capas y relaciones funciona en ambas direcciones sin equipararlas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1353
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "actividad explica errores, admite reintento y no toca el progreso de capítulos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 541
+    },
+    {
+      "file": "taxonomy.spec.ts",
+      "title": "mapa, tabla y navegación funcionan con teclado y móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1559
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 961
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=0",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 643
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=1",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 674
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=2",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 667
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=3",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 683
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /compare",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 968
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=http",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 718
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=network",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 669
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=graphql",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 695
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=rpc",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 705
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=communication",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 699
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=delivery",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 686
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=sse",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2068
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=access",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 683
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=browser",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 710
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=credentials",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 700
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 724
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=design",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 701
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=compatibility",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 719
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=collections",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 719
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=retries",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 685
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=binary",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 695
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=wire",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 684
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=tools",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 684
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /systems?tab=system",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 793
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /systems?tab=transactions",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 719
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /build-api",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 701
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /challenges",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 684
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-7: X Ray permite inspeccionar datos y fallos con teclado a390px",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 337
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "AC-1: cambiar profundidad conserva reproducción en marcha y el evento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 731
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "X Ray tiene un control reconocible en la cabecera de cada laboratorio",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1761
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "el modo X Ray se comparte entre capítulos, pestañas, protocolos y SSE",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 3127
+    },
+    {
+      "file": "xray.spec.ts",
+      "title": "un interruptor gobierna ambas capturas del comparador sin cambiar sus eventos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 606
+    }
+  ]
+}

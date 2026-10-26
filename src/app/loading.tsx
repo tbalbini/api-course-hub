@@ -1,0 +1,1 @@
+export default function Loading() { return <main className="route-message" aria-busy="true"><span className="overline">THE API UNIVERSE</span><h1>Cargando el recorrido…</h1><p role="status">Estamos preparando la siguiente experiencia.</p></main>; }

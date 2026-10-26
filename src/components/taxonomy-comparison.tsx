@@ -1,0 +1,16 @@
+import { axes, categories, layers, technologies, type Technology } from "@/content/taxonomy";
+import { compareTechnologies, dimensions, facetName } from "@/lib/taxonomy";
+
+function DimensionValue({ technology, axis }: { technology: Technology; axis: typeof axes[number] }) {
+  const value = dimensions(technology, axis.id);
+  if (!value.defined.length && !value.possible.length) return <span className="muted">No especificado por esta ficha.</span>;
+  return <>{value.defined.length > 0 && <p><strong>Define:</strong> {value.defined.map(facetName).join(" · ")}</p>}{value.possible.length > 0 && <p><strong>Puede combinar:</strong> {value.possible.map(facetName).join(" · ")}</p>}</>;
+}
+
+export function TaxonomyComparison({ a, b, onA, onB }: { a: Technology; b: Technology; onA: (id: string) => void; onB: (id: string) => void }) {
+  const comparison = compareTechnologies(a, b);
+  return <section className="panel taxonomy-comparison" aria-labelledby="comparison-heading"><div className="comparison-intro"><span className="overline">COMPARA RESPONSABILIDADES, NO NOMBRES</span><h2 id="comparison-heading">¿Alternativas, capas o piezas combinables?</h2><p>Coincidir en un eje no vuelve equivalentes dos tecnologías. Ninguna puntuación sustituye al problema que necesitas resolver.</p><div className="comparison-selectors">{[{ id: "a", label: "Tecnología A", value: a.id, change: onA }, { id: "b", label: "Tecnología B", value: b.id, change: onB }].map(input => <div key={input.id}><label htmlFor={`compare-${input.id}`}>{input.label}</label><select id={`compare-${input.id}`} value={input.value} onChange={e => input.change(e.target.value)}>{technologies.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select></div>)}</div><div className={`comparison-explanation ${comparison.crosses ? "comparison-crosses" : ""}`} role="note"><strong>{comparison.same ? "Misma selección" : comparison.crosses ? "Cruce de categorías o capas" : "Compara su responsabilidad concreta"}</strong><p>{comparison.explanation}</p></div></div>
+    <div className="taxonomy-table-scroll" tabIndex={0} aria-label="Tabla comparativa con desplazamiento horizontal"><table><caption>Dimensiones y responsabilidades de {a.name} y {b.name}</caption><thead><tr><th scope="col">Pregunta</th><th scope="col">{a.name}</th><th scope="col">{b.name}</th></tr></thead><tbody><tr><th scope="row">Qué es</th><td>{a.what}</td><td>{b.what}</td></tr><tr><th scope="row">Categoría</th><td>{categories[a.category]}</td><td>{categories[b.category]}</td></tr><tr><th scope="row">Capa de responsabilidad</th><td>{layers[a.layer]}</td><td>{layers[b.layer]}</td></tr>{axes.map(axis => <tr key={axis.id}><th scope="row">{axis.letter} · {axis.title}</th><td><DimensionValue technology={a} axis={axis} /></td><td><DimensionValue technology={b} axis={axis} /></td></tr>)}<tr><th scope="row">Mecanismo</th><td>{a.how}</td><td>{b.how}</td></tr><tr><th scope="row">Límites</th><td>{a.limits}</td><td>{b.limits}</td></tr></tbody></table></div>
+    <p className="comparison-footnote">Las asociaciones son editoriales y no exhaustivas. Una casilla sin asociación no prueba imposibilidad ni una combinación válida. La categoría describe esta responsabilidad, no todas las capas de una implementación.</p>
+  </section>;
+}

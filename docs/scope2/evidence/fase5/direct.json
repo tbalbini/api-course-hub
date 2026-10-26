@@ -1,0 +1,65 @@
+{
+  "kind": "runtime-check-not-human-study",
+  "date": "2026-10-23T17:16:31.957Z",
+  "sourceSHA256": "4c052012880a0287f31d0d8b82b239175870207fda53600a50602672d1a264dc",
+  "buildId": "deOrT0Ey4XwSyYwPxrQ_g",
+  "checks": [
+    {
+      "id": "D1-real-local-sql-captures",
+      "result": "passed",
+      "observations": {
+        "first": {
+          "id": "68591a63-a9c0-4f8d-ac38-848c3f69b665",
+          "traceId": "44c518ac-1a28-4cff-912f-3e4b947277ed",
+          "quantity": 2
+        },
+        "second": {
+          "id": "ce8c70ca-a754-45f6-9e2b-fb24a35984f0",
+          "traceId": "6c45cf99-ef4a-461b-9044-be50a6d378c4",
+          "quantity": 3
+        },
+        "selectedTrace": "44c518ac-1a28-4cff-912f-3e4b947277ed",
+        "selectedQuantity": "2",
+        "formQuantity": "3",
+        "availabilityTextChecked": true,
+        "screenshots": [
+          "click-desktop.png",
+          "sql-mobile.png"
+        ]
+      },
+      "api": [
+        {
+          "method": "POST",
+          "path": "/api/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/orders"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "D2-browser-api-anatomy",
+      "result": "passed",
+      "observations": {
+        "browserApiDestination": "/first-principles?chapter=2#local-lab-title",
+        "anatomyDestination": "/first-principles?chapter=3#api-anatomy",
+        "mechanism": "ipc",
+        "screenshot": "anatomy-mobile.png"
+      },
+      "api": [],
+      "errors": []
+    },
+    {
+      "id": "D3-models-and-pedagogy",
+      "result": "passed",
+      "observations": {
+        "systemsLateCompletion": true,
+        "advancedChapterChecks": "0/12 before any answer"
+      },
+      "api": [],
+      "errors": []
+    }
+  ]
+}

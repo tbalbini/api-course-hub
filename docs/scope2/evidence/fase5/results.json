@@ -1,0 +1,3823 @@
+{
+  "sourceSHA256": "4c052012880a0287f31d0d8b82b239175870207fda53600a50602672d1a264dc",
+  "buildId": "deOrT0Ey4XwSyYwPxrQ_g",
+  "environment": {
+    "os": "26.6.2",
+    "architecture": "arm64",
+    "node": "v24.14.0",
+    "npm": "11.9.0",
+    "playwright": "1.64.1",
+    "engines": {
+      "chromium": "156.0.8078.4",
+      "firefox": "157.0",
+      "webkit": "27.2"
+    }
+  },
+  "commands": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSHA256": "71dd784081b694304b6c4de1aceacc857614e222e8f4bdad7bb1fed684c21b4e",
+      "lastLines": [
+        "",
+        "> the-api-universe@0.1.0 lint",
+        "> eslint",
+        ""
+      ]
+    },
+    {
+      "command": "npm test -- --reporter=dot",
+      "exitCode": 0,
+      "logSHA256": "7b1d8f8dff067b0d3c40a65afc0a778bbe11ea2098a95deccf94469f30c0890f",
+      "lastLines": [
+        " Test Files  20 passed (20)",
+        "      Tests  758 passed (758)",
+        "   Start at  12:12:28",
+        "   Duration  972ms (tests 41%, import 32%, transform 22%, worker 5%)",
+        "",
+        "    Isolate  20 workers spawned [dots] ~170ms startup each (spawn + environment, per file)",
+        "             at least ~315ms faster with isolate: false — reuses workers across files instead of one per file",
+        ""
+      ]
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSHA256": "09657624caa27adc769ea94d200890c71fba8c629e2c87d18647010a80a29db4",
+      "lastLines": [
+        "Route (app)",
+        "┌ ○ /",
+        "├ ○ /_not-found",
+        "├ ○ /advanced",
+        "├ ○ /api-universe",
+        "├ ƒ /api/lab/events",
+        "├ ƒ /api/lab/http",
+        "├ ƒ /api/orders",
+        "├ ƒ /api/orders/[id]",
+        "├ ○ /build-api",
+        "├ ○ /challenges",
+        "├ ○ /compare",
+        "├ ○ /contracts",
+        "├ ○ /course",
+        "├ ○ /events",
+        "├ ○ /first-principles",
+        "├ ○ /follow-the-click",
+        "├ ○ /icon.svg",
+        "├ ○ /playground",
+        "├ ○ /reference",
+        "├ ○ /security",
+        "└ ○ /systems",
+        "",
+        "",
+        "○  (Static)   prerendered as static content",
+        "ƒ  (Dynamic)  server-rendered on demand",
+        ""
+      ]
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSHA256": "832322340f68659de8cb9ee975b62e755c7ed2e44479b09689ef59d4d032675c",
+      "lastLines": [
+        "",
+        "Fuentes del proyecto: 14 archivos incorporados en /Users/miguelangelbalbin/Desktop/api-course/",
+        "",
+        "> the-api-universe@0.1.0 typecheck",
+        "> next typegen && tsc --noEmit",
+        "",
+        "Generating route types...",
+        "✓ Types generated successfully"
+      ]
+    },
+    {
+      "command": "npm run test:delivery",
+      "exitCode": 0,
+      "logSHA256": "ff62545e232028d7dfaec73558af7830ecfca4fd2d6c21be9114113694bb4ea9",
+      "lastLines": [
+        "  ✓  210 [webkit] › tests/e2e/delivery.spec.ts:8:7 › AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños (877ms)",
+        "  ✓  211 [webkit] › tests/e2e/delivery.spec.ts:8:7 › AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños (1.1s)",
+        "  ✓  212 [webkit] › tests/e2e/delivery.spec.ts:8:7 › AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños (912ms)",
+        "  ✓  213 [webkit] › tests/e2e/delivery.spec.ts:8:7 › AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños (1.3s)",
+        "  ✓  214 [webkit] › tests/e2e/delivery.spec.ts:49:5 › AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real (1.1s)",
+        "  ✓  215 [webkit] › tests/e2e/delivery.spec.ts:87:5 › AC-3: los colores de texto y controles conservan contraste y reducción de movimiento (459ms)",
+        "",
+        "  215 passed (3.3m)"
+      ]
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-23T17:13:02.365Z",
+    "duration": 197013.032,
+    "expected": 215,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-2/9: conservar API no conserva ABI y lifetime impide la invocación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 871
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-3/9: Wasm ejecuta y produce trap real, sin compilar al abrir o reproducir",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 554
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-4/9: cada byte lleva al buffer del cursor y EOF truncado no inventa SQL",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 486
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-5: JSON y nombres no se evalúan, y schema no concede permiso",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 404
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-6/9: resultado incompatible no revierte efecto y el adaptador traduce el contrato",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 411
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-7/8: seis ejecuciones y doce respuestas comprobadas completan y persisten capítulo12",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1974
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-1/9: profundidad y X Ray conservan datos, captura, panel y borradores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 601
+    },
+    {
+      "file": "tests/e2e/advanced.spec.ts",
+      "title": "AC-1/8: teclado, móvil y modo de sesión permiten explorar sin almacenamiento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 312
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-1/2/3/4: siete desafíos exigen resultado y causa juntos, sin peticiones de negocio",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2199
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-2/4/5: una causa correcta no basta; reintentar y reproducir conservan el logro",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 494
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-2/5: JSON inválido es recuperable y permisos y body se comprueban por separado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 426
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-4/5: historial conserva borrador y captura, recarga solo logros y los otros almacenes",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 523
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-4/5: almacenamiento bloqueado permite resolver en sesión y query desconocida es segura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 321
+    },
+    {
+      "file": "tests/e2e/challenges.spec.ts",
+      "title": "AC-5: teclado, foco y controles conservan espacio en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1183
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "GET, POST, errores y favoritos mantienen significado y contexto en las tres profundidades",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 4644
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "la compra y el rechazo reales registran setters sin atribuirles un paint observado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1425
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "la consola /compare describe GET y PATCH y sus setters sin heredar creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1057
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "la consola /build-api describe GET y PATCH y sus setters sin heredar creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1026
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "compra real, consulta, reproducción sin efectos y acción local",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 877
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "el servidor distingue 401 de 403 desde la consola",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 668
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "simular fallo antes de entrega y respuesta perdida cambia el flujo sin enviar HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 682
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "perder la respuesta después de guardar conserva la clave y el payload al reintentar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 583
+    },
+    {
+      "file": "tests/e2e/click-lab.spec.ts",
+      "title": "móvil y teclado mantienen la consola operable sin desbordar la página",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 530
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "la selección espera a que sus handlers estén conectados, incluso con JavaScript retrasado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 586
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "proyecta campos GraphQL y cambia el flujo gRPC sin tráfico real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 711
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "polling y suscripción separan comando y observación que resuelve la incertidumbre",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1157
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "SOAP y XML RPC muestran contratos XML válidos y evaluación razonada",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1213
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "HTTP real crea, consulta y confirma con permisos y reproducción sin efectos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1132
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "una creación con respuesta perdida conserva clave y recupera el mismo pedido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 671
+    },
+    {
+      "file": "tests/e2e/comparison.spec.ts",
+      "title": "navegación por teclado y móvil sin desbordar la página",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 741
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-2/3: JSON inválido, validación previa y forma válida con negocio incorrecto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 631
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-4: renombre rompe, coexistencia conserva v1 y dirección inversa falla",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 665
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-4: extras tolerados o estrictos y contrato de errores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 634
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-5: offset repite tras inserción, cursor evita ese duplicado y se valida",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 520
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-6/9: reintentos, conflicto, retención y replay sin HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 575
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-7: descargas reales reflejan el diseño y AsyncAPI es independiente",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 343
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-8: cuatro actividades y feedback razonado completan el desafío",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 872
+    },
+    {
+      "file": "tests/e2e/contracts.spec.ts",
+      "title": "AC-1: móvil, enlaces, teclado y pausa conservan contexto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1072
+    },
+    {
+      "file": "tests/e2e/course-regressions.spec.ts",
+      "title": "AC-1, AC-2, AC-5: progreso accesible y programa antes de exploración secundaria",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 826
+    },
+    {
+      "file": "tests/e2e/course-regressions.spec.ts",
+      "title": "AC-3, AC-4: dos pestañas conservan la unión de logros y una lectura inválida no borra los anteriores",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 670
+    },
+    {
+      "file": "tests/e2e/course-regressions.spec.ts",
+      "title": "AC-3, AC-4: los logros de primeros principios también sobreviven a otra pestaña",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 571
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "el recorrido conserva logros anteriores y no completa capítulos por visitarlos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1124
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "actividades y razonamiento de red persisten sin completar por solo elegir una respuesta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 627
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "continuar recupera pestaña y profundidad, sin guardar parámetros arbitrarios",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 383
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "el comparador conserva operaciones exploradas y razonamiento al recargar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 797
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "almacenamiento bloqueado permite aprender y conserva logros durante la navegación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 392
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "datos inválidos y cambios de otra pestaña mantienen un resumen válido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 468
+    },
+    {
+      "file": "tests/e2e/course.spec.ts",
+      "title": "áreas orientativas, teclado, 404 y navegación móvil mantienen estados honestos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1088
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 941
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 998
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 890
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 666
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1014
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 960
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 674
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 617
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 627
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 682
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 749
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 483
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 613
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 729
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 571
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 739
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 508
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 2361
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1067
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 995
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 940
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1129
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1062
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1366
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1185
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1123
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1700
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1410
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1062
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1107
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1015
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1033
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 1262
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "firefox",
+      "status": "passed",
+      "durationMs": 399
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 2070
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1165
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1382
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1284
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1481
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1401
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1350
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1056
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1066
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1193
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1259
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 877
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1061
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 912
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1340
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-2/5/6: compra, confirmación, permisos y replay funcionan contra HTTP real",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 1082
+    },
+    {
+      "file": "tests/e2e/delivery.spec.ts",
+      "title": "AC-3: los colores de texto y controles conservan contraste y reducción de movimiento",
+      "project": "webkit",
+      "status": "passed",
+      "durationMs": 459
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "SSE usa comando separado y reconectar sin historial deja el chat retrasado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 610
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "un ACK perdido reentrega el mismo id y sin filtros repite aplicaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 542
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "copias publicadas tienen otro offset, relectura conserva ids y agotamiento no salta registros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 476
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "pub/sub permite inspeccionar dos ramas y deja Analítica adelantada",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 412
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "SSE real recibe tres eventos en un GET y replay no abre otra conexión",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1948
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "EventSource cierra ante error sin inventar status HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 377
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "datos SSE fuera del contrato se rechazan y no se muestran como actualización",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 309
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "el capítulo exige actividades observadas y feedback razonado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 678
+    },
+    {
+      "file": "tests/e2e/events.spec.ts",
+      "title": "teclado y móvil conservan ajustes, pausa y navegación sin desbordar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 948
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "B abre Browser API y Anatomy conserva su propio destino a1440px sin ejecutar operaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 316
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "B abre Browser API y Anatomy conserva su propio destino a390px sin ejecutar operaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 273
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "función real, pila reversible, evaluación y progreso persistente",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 645
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "sustituir la implementación conserva o rompe el contrato del consumidor",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 426
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "DOM real trata entrada como texto y replay no repite mutaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 441
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "Anatomy distingue siete fronteras y concurrencia conserva cadenas separadas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1840
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "datos locales inválidos y almacenamiento bloqueado no impiden aprender",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 296
+    },
+    {
+      "file": "tests/e2e/foundations.spec.ts",
+      "title": "consola y navegación funcionan por teclado y en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 396
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/: un rechazo del reintento conserva la creación incierta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 623
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/: un 502 con HTML conserva status, headers y body original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 556
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/: recibir headers antes de fallar la lectura no borra el Response",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 537
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/: un 201 sin pedido válido no libera la clave de creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 524
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/compare: un rechazo del reintento conserva la creación incierta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 626
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/compare: un 502 con HTML conserva status, headers y body original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 574
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/compare: recibir headers antes de fallar la lectura no borra el Response",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 537
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "/compare: un 201 sin pedido válido no libera la clave de creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 550
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "cinco áreas conservan jerarquía, contexto y acceso en escritorio, tablet y móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 6955
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "cada inspector referencia su propio encabezado, incluso en paneles ocultos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 426
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "los capítulos tienen enlaces propios y sus prácticas conservan borradores sin ejecutar efectos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 3783
+    },
+    {
+      "file": "tests/e2e/front-regressions.spec.ts",
+      "title": "las fichas remotas abren el laboratorio y la pestaña correspondientes sin ejecutar peticiones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2436
+    },
+    {
+      "file": "tests/e2e/network.spec.ts",
+      "title": "vistas comparten cursor, condiciones capturadas y omisiones causales",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1126
+    },
+    {
+      "file": "tests/e2e/network.spec.ts",
+      "title": "captura real no inventa conexiones y favoritos no muestra infraestructura remota",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 693
+    },
+    {
+      "file": "tests/e2e/network.spec.ts",
+      "title": "fallos y duplicados cambian los componentes alcanzados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 389
+    },
+    {
+      "file": "tests/e2e/network.spec.ts",
+      "title": "vistas y selección funcionan con teclado en móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 561
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "negocia JSON y texto, revalida con 304 y evalúa el capítulo HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 686
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "presets de pedido, permisos y métodos no soportados conservan status y body",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 898
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "rechaza edición fuera del contrato sin enviar tráfico",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 371
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "HTTP3 recupera contenido y UDP no inventa transporte fiable ni respuesta HTTP",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 618
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "GraphQL y RPC usan contratos compartidos y conservan campos entre pestañas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 530
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "JSON inválido recibido conserva status, headers y texto original",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 275
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "respuesta de creación perdida conserva la solicitud al cambiar pestañas y reintenta la misma clave",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 431
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "un fallo al leer body no borra el Response ya recibido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 277
+    },
+    {
+      "file": "tests/e2e/playground.spec.ts",
+      "title": "móvil y teclado navegan pestañas, mantienen el borrador y no desbordan",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 922
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-1/2/4/5/8: crea, confirma, distingue snapshot y estado actual y acredita resultados reales",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1313
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-5: recupera la creación B y repetir original usa B, no la anterior A",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 533
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-4/5/8: trace inválido conserva Response y operación sin aplicar Order ni logros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 332
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-4/5/8: order inválido conserva Response y operación sin aplicar Order ni logros",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 370
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-5: PATCH lost conserva id y GET observa el efecto sin repetir escritura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 485
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-5: PATCH malformed conserva id y GET observa el efecto sin repetir escritura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 448
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-2/4: 401 y404 no cambian el último pedido y GET fallido no bloquea una creación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 365
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-6: fuente y descarga coinciden con el archivo y hash incorporados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 266
+    },
+    {
+      "file": "tests/e2e/project.spec.ts",
+      "title": "AC-1: teclado, reducción de movimiento y móvil conservan contexto sin desbordar",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 373
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-2/3: alias y tildes encuentran fichas, AND y tema filtran sin resultados inventados",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 403
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-4/5: relaciones, historial y recarga conservan URL y selección fuera del filtro",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 329
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-4: URL inválida se recupera y el texto de búsqueda no se interpreta como HTML",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 164
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-5: consulta desde captura HTTP real abre otra pestaña sin perder datos ni repetir operación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 499
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-6: guía tiene comandos, contrato, límites y enlaces reales sin modificar progreso",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 294
+    },
+    {
+      "file": "tests/e2e/reference.spec.ts",
+      "title": "AC-1/7: teclado y móvil permiten buscar, saltar al detalle y consultar la guía",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 263
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-2/8: cada control de acceso detiene el negocio y consultar conserva estado",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 643
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-3/4: formulario puede aplicar efecto oculto y preflight fallido impide JSON",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 437
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-3/4: wildcard con credentials no basta y CSRF puede rechazar con CORS permitido",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 592
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-5: cada credencial tiene un mecanismo y sus propios fallos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 905
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-5: OIDC valida identidad para cliente y falla si se envía ID token a API",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 463
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-6: HTTP real conserva permisos, challenge y replay sin solicitudes",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 680
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-6: perder respuesta de creación mantiene identidad al cambiar pestaña",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 449
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-7: actividades reales y modelos alimentan evaluación con feedback",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 803
+    },
+    {
+      "file": "tests/e2e/security.spec.ts",
+      "title": "AC-1/8: móvil y teclado mantienen contexto y navegación",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1036
+    },
+    {
+      "file": "tests/e2e/storage-example.spec.ts",
+      "title": "AC-1/2/3/4/6: SQL sigue la escritura capturada al editar, reproducir y volver a la anterior",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1576
+    },
+    {
+      "file": "tests/e2e/storage-example.spec.ts",
+      "title": "AC-1/2/5: consultas, errores, deduplicación y favoritos no se presentan como INSERT",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1387
+    },
+    {
+      "file": "tests/e2e/storage-example.spec.ts",
+      "title": "AC-4: inspeccionar una escritura anterior conserva el intento incierto y su reintento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 766
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-2/4/6: inventario opcional degrada y el obligatorio falla toda la respuesta",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 477
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-2/3: arquitectura y roles cambian captura, fronteras y proyección",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 578
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-3/4/9: timeout conserva finalización tardía, inspector y replay sin red",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 544
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-5/6: circuito rechaza llamadas y half open recupera tras cooldown",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 443
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-5: caché antigua evita trabajo y TTL permite nueva lectura",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 393
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-7: local hace rollback, saga recupera compensación y 2PC decisión",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 685
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-8: cuatro observaciones y explicación correcta completan desafío",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 985
+    },
+    {
+      "file": "tests/e2e/systems.spec.ts",
+      "title": "AC-1: móvil, teclado, pausa y práctica J preservan contexto",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1159
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "búsqueda, filtros combinados, ausencia de resultados y selección estable",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 679
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "las 49 facetas se pueden seleccionar y tienen explicación y asociaciones",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1568
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "el mapa se conecta con filtros y conserva definido frente a posible",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 601
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "comparar capas y relaciones funciona en ambas direcciones sin equipararlas",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 929
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "actividad explica errores, admite reintento y no toca el progreso de capítulos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 559
+    },
+    {
+      "file": "tests/e2e/taxonomy.spec.ts",
+      "title": "mapa, tabla y navegación funcionan con teclado y móvil",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1604
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1028
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=0",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 654
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=1",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 655
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=2",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 703
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /first-principles?chapter=3",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 671
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /compare",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 974
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=http",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 775
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=network",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 738
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=graphql",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 707
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /playground?tab=rpc",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 759
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=communication",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 689
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=delivery",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 721
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /events?tab=sse",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 2039
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=access",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 952
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=browser",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 763
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=credentials",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 688
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /security?tab=real",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 792
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=design",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 772
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=compatibility",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 758
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=collections",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 776
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /contracts?tab=retries",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 754
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=binary",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 738
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=wire",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 670
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /advanced?tab=tools",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 696
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /systems?tab=system",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 762
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /systems?tab=transactions",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 757
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /build-api",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 705
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1/2/3/4/5: X Ray conserva contexto sin efectos en /challenges",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 721
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-7: X Ray permite inspeccionar datos y fallos con teclado a390px",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 358
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "AC-1: cambiar profundidad conserva reproducción en marcha y el evento",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 701
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "X Ray tiene un control reconocible en la cabecera de cada laboratorio",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 1828
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "el modo X Ray se comparte entre capítulos, pestañas, protocolos y SSE",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 3093
+    },
+    {
+      "file": "tests/e2e/xray.spec.ts",
+      "title": "un interruptor gobierna ambas capturas del comparador sin cambiar sus eventos",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 636
+    }
+  ],
+  "navigation": [
+    {
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 1.3000000715255737,
+      "domContentLoadedMs": 30.399999976158142,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 6.099999904632568,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 8.100000023841858,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 2.200000047683716,
+      "domContentLoadedMs": 33.10000002384186,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 1.399999976158142,
+      "domContentLoadedMs": 8.200000047683716,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 1.2999999523162842,
+      "domContentLoadedMs": 7.800000071525574,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "chromium"
+    },
+    {
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 1.8000000715255737,
+      "domContentLoadedMs": 30.899999976158142,
+      "scriptBytes": 303552,
+      "scriptCount": 18,
+      "project": "chromium"
+    },
+    {
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 1.1999999284744263,
+      "domContentLoadedMs": 6.399999976158142,
+      "scriptBytes": 241253,
+      "scriptCount": 14,
+      "project": "chromium"
+    },
+    {
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 1.8000000715255737,
+      "domContentLoadedMs": 6.799999952316284,
+      "scriptBytes": 241253,
+      "scriptCount": 14,
+      "project": "chromium"
+    },
+    {
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 1.0999999046325684,
+      "domContentLoadedMs": 21.90000009536743,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.700000047683716,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 1.7000000476837158,
+      "domContentLoadedMs": 7.099999904632568,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 1.9000000953674316,
+      "domContentLoadedMs": 31.100000023841858,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 2.9000000953674316,
+      "domContentLoadedMs": 8.800000071525574,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 6.800000071525574,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 2.200000047683716,
+      "domContentLoadedMs": 30.200000047683716,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 0.9000000953674316,
+      "domContentLoadedMs": 6.099999904632568,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 6.300000071525574,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 21.699999928474426,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 0.7999999523162842,
+      "domContentLoadedMs": 5.200000047683716,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.5,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 21.899999976158142,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5.299999952316284,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 1.0999999046325684,
+      "domContentLoadedMs": 22.100000023841858,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 6.200000047683716,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 4.899999976158142,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 1.1999999284744263,
+      "domContentLoadedMs": 22.399999976158142,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 0.9000000953674316,
+      "domContentLoadedMs": 5.200000047683716,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 0.8999999761581421,
+      "domContentLoadedMs": 5.099999904632568,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 21.200000047683716,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 0.7999999523162842,
+      "domContentLoadedMs": 5.399999976158142,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5.200000047683716,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 23.5,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 6.100000023841858,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 1.1999999284744263,
+      "domContentLoadedMs": 6.099999904632568,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 20.100000023841858,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 0.7999999523162842,
+      "domContentLoadedMs": 5.399999976158142,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 0.8000000715255737,
+      "domContentLoadedMs": 5,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 15.700000047683716,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 5.699999928474426,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 8.899999976158142,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "chromium"
+    },
+    {
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 2.3000000715255737,
+      "domContentLoadedMs": 24.5,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 1.100000023841858,
+      "domContentLoadedMs": 6,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 1.2999999523162842,
+      "domContentLoadedMs": 6.400000095367432,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "chromium"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 13,
+      "domContentLoadedMs": 128,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 16,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 12,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 35,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 198183,
+      "scriptCount": 12,
+      "project": "firefox"
+    },
+    {
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 28,
+      "scriptBytes": 303552,
+      "scriptCount": 18,
+      "project": "firefox"
+    },
+    {
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 241253,
+      "scriptCount": 14,
+      "project": "firefox"
+    },
+    {
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 241253,
+      "scriptCount": 14,
+      "project": "firefox"
+    },
+    {
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 23,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 183033,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 46,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 12,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 174677,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 36,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 186500,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 27,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 12,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 192183,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 32,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 183515,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 30,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 193181,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 26,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 190885,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 62,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 189154,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 72,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 178117,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 36,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 193752,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 27,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 189228,
+      "scriptCount": 10,
+      "project": "firefox"
+    },
+    {
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 4,
+      "domContentLoadedMs": 35,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 209703,
+      "scriptCount": 11,
+      "project": "firefox"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "ttfbMs": 6,
+      "domContentLoadedMs": 115,
+      "scriptBytes": 198480,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 24,
+      "scriptBytes": 198480,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/follow-the-click",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 12,
+      "project": "webkit"
+    },
+    {
+      "route": "/course",
+      "width": 1440,
+      "ttfbMs": 5,
+      "domContentLoadedMs": 92,
+      "scriptBytes": 303994,
+      "scriptCount": 18,
+      "project": "webkit"
+    },
+    {
+      "route": "/course",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 14,
+      "project": "webkit"
+    },
+    {
+      "route": "/course",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 14,
+      "project": "webkit"
+    },
+    {
+      "route": "/first-principles",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 20,
+      "scriptBytes": 183295,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/first-principles",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 24,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/first-principles",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/api-universe",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 25,
+      "scriptBytes": 174933,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/api-universe",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 14,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/api-universe",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 19,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/compare",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 28,
+      "scriptBytes": 186763,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/compare",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/compare",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/playground",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 19,
+      "scriptBytes": 192457,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/playground",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/playground",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/events",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 183778,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/events",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 10,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/events",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/security",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 193452,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/security",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/security",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/contracts",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 20,
+      "scriptBytes": 191159,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/contracts",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/contracts",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 15,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/systems",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 18,
+      "scriptBytes": 189428,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/systems",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/systems",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/build-api",
+      "width": 1440,
+      "ttfbMs": 3,
+      "domContentLoadedMs": 22,
+      "scriptBytes": 178373,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/build-api",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/build-api",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 9,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/advanced",
+      "width": 1440,
+      "ttfbMs": 1,
+      "domContentLoadedMs": 20,
+      "scriptBytes": 194034,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/advanced",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 7,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/advanced",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/reference",
+      "width": 1440,
+      "ttfbMs": 2,
+      "domContentLoadedMs": 17,
+      "scriptBytes": 189491,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/reference",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 13,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/reference",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 8,
+      "scriptBytes": 0,
+      "scriptCount": 10,
+      "project": "webkit"
+    },
+    {
+      "route": "/challenges",
+      "width": 1440,
+      "ttfbMs": 21,
+      "domContentLoadedMs": 61,
+      "scriptBytes": 210000,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/challenges",
+      "width": 701,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    },
+    {
+      "route": "/challenges",
+      "width": 390,
+      "ttfbMs": 0,
+      "domContentLoadedMs": 11,
+      "scriptBytes": 0,
+      "scriptCount": 11,
+      "project": "webkit"
+    }
+  ],
+  "httpReceipts": [
+    {
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 7.511,
+      "orderStatus": "created",
+      "project": "chromium"
+    },
+    {
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 5.45,
+      "orderStatus": "confirmed",
+      "project": "chromium"
+    },
+    {
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 2.312,
+      "orderStatus": "created",
+      "project": "chromium"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 2.527,
+      "orderStatus": "confirmed",
+      "project": "chromium"
+    },
+    {
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 2.945,
+      "error": "FORBIDDEN",
+      "project": "chromium"
+    },
+    {
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 2.716,
+      "error": "UNAUTHENTICATED",
+      "project": "chromium"
+    },
+    {
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 3.8701171875,
+      "orderStatus": "created",
+      "project": "firefox"
+    },
+    {
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 3.116943359375,
+      "orderStatus": "confirmed",
+      "project": "firefox"
+    },
+    {
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 2.239990234375,
+      "orderStatus": "created",
+      "project": "firefox"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 2.6240234375,
+      "orderStatus": "confirmed",
+      "project": "firefox"
+    },
+    {
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 2.699951171875,
+      "error": "FORBIDDEN",
+      "project": "firefox"
+    },
+    {
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 2.2578125,
+      "error": "UNAUTHENTICATED",
+      "project": "firefox"
+    },
+    {
+      "method": "POST",
+      "status": 201,
+      "responseEndMs": 14.745,
+      "orderStatus": "created",
+      "project": "webkit"
+    },
+    {
+      "method": "PATCH",
+      "status": 200,
+      "responseEndMs": 7.38,
+      "orderStatus": "confirmed",
+      "project": "webkit"
+    },
+    {
+      "method": "POST",
+      "status": 200,
+      "responseEndMs": 3.651,
+      "orderStatus": "created",
+      "project": "webkit"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "responseEndMs": 2.581,
+      "orderStatus": "confirmed",
+      "project": "webkit"
+    },
+    {
+      "method": "PATCH",
+      "status": 403,
+      "responseEndMs": 4.273,
+      "error": "FORBIDDEN",
+      "project": "webkit"
+    },
+    {
+      "method": "GET",
+      "status": 401,
+      "responseEndMs": 2.719,
+      "error": "UNAUTHENTICATED",
+      "project": "webkit"
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "--ink",
+      "background": "--canvas",
+      "ratio": 16.95090962111378,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--surface",
+      "ratio": 15.696017462271247,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--raised",
+      "ratio": 14.112061668546422,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--body",
+      "background": "--canvas",
+      "ratio": 9.164898214790986,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--body",
+      "background": "--surface",
+      "ratio": 8.486411976388434,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--body",
+      "background": "--raised",
+      "ratio": 7.630009933625217,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--canvas",
+      "ratio": 7.414067743310245,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--surface",
+      "ratio": 6.865197170334111,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--raised",
+      "ratio": 6.172399213199291,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--canvas",
+      "ratio": 14.624435975757315,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface",
+      "ratio": 13.541774900707193,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--raised",
+      "ratio": 12.175213423386515,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--canvas",
+      "ratio": 10.24638977828135,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--surface",
+      "ratio": 9.487839678221015,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--raised",
+      "ratio": 8.530379057119244,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--canvas",
+      "ratio": 10.208880933448867,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--surface",
+      "ratio": 9.45310764928335,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--raised",
+      "ratio": 8.499151993603279,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--data",
+      "background": "--canvas",
+      "ratio": 14.892638731717108,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--data",
+      "background": "--surface",
+      "ratio": 13.790122348429446,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--data",
+      "background": "--raised",
+      "ratio": 12.398499011970168,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--error",
+      "background": "--canvas",
+      "ratio": 10.310963463391406,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--error",
+      "background": "--surface",
+      "ratio": 9.547632911253665,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--error",
+      "background": "--raised",
+      "ratio": 8.584138285786441,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--canvas",
+      "ratio": 12.117960238507157,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--surface",
+      "ratio": 11.220855975410446,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--raised",
+      "ratio": 10.08850887682157,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--canvas",
+      "ratio": 4.102008921940291,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--surface",
+      "ratio": 3.7983332522149773,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--raised",
+      "ratio": 3.415026341668703,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--on-accent",
+      "background": "--accent",
+      "ratio": 12.725841807225578,
+      "project": "chromium"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--canvas",
+      "ratio": 16.95090962111378,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--surface",
+      "ratio": 15.696017462271247,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--raised",
+      "ratio": 14.112061668546422,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--body",
+      "background": "--canvas",
+      "ratio": 9.164898214790986,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--body",
+      "background": "--surface",
+      "ratio": 8.486411976388434,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--body",
+      "background": "--raised",
+      "ratio": 7.630009933625217,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--canvas",
+      "ratio": 7.414067743310245,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--surface",
+      "ratio": 6.865197170334111,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--raised",
+      "ratio": 6.172399213199291,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--canvas",
+      "ratio": 14.624435975757315,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface",
+      "ratio": 13.541774900707193,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--raised",
+      "ratio": 12.175213423386515,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--canvas",
+      "ratio": 10.24638977828135,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--surface",
+      "ratio": 9.487839678221015,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--raised",
+      "ratio": 8.530379057119244,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--canvas",
+      "ratio": 10.208880933448867,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--surface",
+      "ratio": 9.45310764928335,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--raised",
+      "ratio": 8.499151993603279,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--data",
+      "background": "--canvas",
+      "ratio": 14.892638731717108,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--data",
+      "background": "--surface",
+      "ratio": 13.790122348429446,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--data",
+      "background": "--raised",
+      "ratio": 12.398499011970168,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--error",
+      "background": "--canvas",
+      "ratio": 10.310963463391406,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--error",
+      "background": "--surface",
+      "ratio": 9.547632911253665,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--error",
+      "background": "--raised",
+      "ratio": 8.584138285786441,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--canvas",
+      "ratio": 12.117960238507157,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--surface",
+      "ratio": 11.220855975410446,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--raised",
+      "ratio": 10.08850887682157,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--canvas",
+      "ratio": 4.102008921940291,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--surface",
+      "ratio": 3.7983332522149773,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--raised",
+      "ratio": 3.415026341668703,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--on-accent",
+      "background": "--accent",
+      "ratio": 12.725841807225578,
+      "project": "firefox"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--canvas",
+      "ratio": 16.95090962111378,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--surface",
+      "ratio": 15.696017462271247,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--ink",
+      "background": "--raised",
+      "ratio": 14.112061668546422,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--body",
+      "background": "--canvas",
+      "ratio": 9.164898214790986,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--body",
+      "background": "--surface",
+      "ratio": 8.486411976388434,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--body",
+      "background": "--raised",
+      "ratio": 7.630009933625217,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--canvas",
+      "ratio": 7.414067743310245,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--surface",
+      "ratio": 6.865197170334111,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--muted",
+      "background": "--raised",
+      "ratio": 6.172399213199291,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--canvas",
+      "ratio": 14.624435975757315,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface",
+      "ratio": 13.541774900707193,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--accent",
+      "background": "--raised",
+      "ratio": 12.175213423386515,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--canvas",
+      "ratio": 10.24638977828135,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--surface",
+      "ratio": 9.487839678221015,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--consumer",
+      "background": "--raised",
+      "ratio": 8.530379057119244,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--canvas",
+      "ratio": 10.208880933448867,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--surface",
+      "ratio": 9.45310764928335,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--contract",
+      "background": "--raised",
+      "ratio": 8.499151993603279,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--data",
+      "background": "--canvas",
+      "ratio": 14.892638731717108,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--data",
+      "background": "--surface",
+      "ratio": 13.790122348429446,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--data",
+      "background": "--raised",
+      "ratio": 12.398499011970168,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--error",
+      "background": "--canvas",
+      "ratio": 10.310963463391406,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--error",
+      "background": "--surface",
+      "ratio": 9.547632911253665,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--error",
+      "background": "--raised",
+      "ratio": 8.584138285786441,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--canvas",
+      "ratio": 12.117960238507157,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--surface",
+      "ratio": 11.220855975410446,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--persistent",
+      "background": "--raised",
+      "ratio": 10.08850887682157,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--canvas",
+      "ratio": 4.102008921940291,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--surface",
+      "ratio": 3.7983332522149773,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--control-border",
+      "background": "--raised",
+      "ratio": 3.415026341668703,
+      "project": "webkit"
+    },
+    {
+      "foreground": "--on-accent",
+      "background": "--accent",
+      "ratio": 12.725841807225578,
+      "project": "webkit"
+    }
+  ],
+  "accessibleSnapshotDigests": [
+    {
+      "test": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "b5dbb92a6d68b527785a3e74698b63a27360a9d44d1019602b91a69a41c142df",
+      "bytes": 6223
+    },
+    {
+      "test": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "b5dbb92a6d68b527785a3e74698b63a27360a9d44d1019602b91a69a41c142df",
+      "bytes": 6223
+    },
+    {
+      "test": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "b616dc6c25f8ec991436ca8633b84d98e0d35059cf1d8903224ae7c2a1278e71",
+      "bytes": 5217
+    },
+    {
+      "test": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "9147277933aa56ff5a4bed353bc6c6a68aafe7a7cf11d1f1218cb36ffa1437a2",
+      "bytes": 8560
+    },
+    {
+      "test": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "ca1948aff0c0921264808610d16530c76fe4a2d9fac7d9c34a00f8a3c5eff62e",
+      "bytes": 22842
+    },
+    {
+      "test": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "844db11d6d1d4c603a9b58632fc49ae419c7f3715f98669c812ee16f868f5a7b",
+      "bytes": 14777
+    },
+    {
+      "test": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "1b5081c0b6f93ce7d100f1c6e5429a09611b4122e765a70e2fcf9c55a40f864b",
+      "bytes": 13208
+    },
+    {
+      "test": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "a191d9254321c32675978d85b2b99c9b64e66ca6323404ef372e23825aaee00e",
+      "bytes": 5909
+    },
+    {
+      "test": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "df2c18949e6c9b2ac5e4a62adeb31cd1e2da8ba6fac451e7fbe996861828b4e7",
+      "bytes": 6756
+    },
+    {
+      "test": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "b510e97772fa6610af29129e2566db75c1e29576a5a6f11091b3617a61aa2394",
+      "bytes": 9468
+    },
+    {
+      "test": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "a076afd09f61fb3990e87a98932b484ba9cfb8fd53f4021b635b255f01548b5a",
+      "bytes": 21738
+    },
+    {
+      "test": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "73d56aaae6145e2213ada90e957dc68a6f46597d46f99dfb2f198228fbc066f9",
+      "bytes": 4608
+    },
+    {
+      "test": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "a4d8fbb21105cf0aeb30411d14a869ccf6d9b782883dbf4129f5972b2b5b31d3",
+      "bytes": 5314
+    },
+    {
+      "test": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "f59184fb9251b4d8ac3cc2fe87400d082ca1a4e2066c76cad7a1cc7fc7064894",
+      "bytes": 20925
+    },
+    {
+      "test": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "chromium",
+      "sha256": "16820d13d3d92f9bf38313ae738dd3ccddd94a2ab0ee33ed3683a12cc6c7c9cf",
+      "bytes": 3788
+    },
+    {
+      "test": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "b395652ca29bc931a231d680dd17a7b3e016eeec2f6b69f5da8792ee475c51b6",
+      "bytes": 6211
+    },
+    {
+      "test": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "b395652ca29bc931a231d680dd17a7b3e016eeec2f6b69f5da8792ee475c51b6",
+      "bytes": 6211
+    },
+    {
+      "test": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "b616dc6c25f8ec991436ca8633b84d98e0d35059cf1d8903224ae7c2a1278e71",
+      "bytes": 5217
+    },
+    {
+      "test": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "9147277933aa56ff5a4bed353bc6c6a68aafe7a7cf11d1f1218cb36ffa1437a2",
+      "bytes": 8560
+    },
+    {
+      "test": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "07a6504b6885aa29c5e87f5e884547cde38c44395c4e523c571ff8569fec8f79",
+      "bytes": 22830
+    },
+    {
+      "test": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "844db11d6d1d4c603a9b58632fc49ae419c7f3715f98669c812ee16f868f5a7b",
+      "bytes": 14777
+    },
+    {
+      "test": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "1b5081c0b6f93ce7d100f1c6e5429a09611b4122e765a70e2fcf9c55a40f864b",
+      "bytes": 13208
+    },
+    {
+      "test": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "a191d9254321c32675978d85b2b99c9b64e66ca6323404ef372e23825aaee00e",
+      "bytes": 5909
+    },
+    {
+      "test": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "df2c18949e6c9b2ac5e4a62adeb31cd1e2da8ba6fac451e7fbe996861828b4e7",
+      "bytes": 6756
+    },
+    {
+      "test": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "b510e97772fa6610af29129e2566db75c1e29576a5a6f11091b3617a61aa2394",
+      "bytes": 9468
+    },
+    {
+      "test": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "7b13c5a35aefc52c708383761dfd2c3a5b6ea28d4e397881ef2d7004a660f008",
+      "bytes": 21730
+    },
+    {
+      "test": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "73d56aaae6145e2213ada90e957dc68a6f46597d46f99dfb2f198228fbc066f9",
+      "bytes": 4608
+    },
+    {
+      "test": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "a4d8fbb21105cf0aeb30411d14a869ccf6d9b782883dbf4129f5972b2b5b31d3",
+      "bytes": 5314
+    },
+    {
+      "test": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "f59184fb9251b4d8ac3cc2fe87400d082ca1a4e2066c76cad7a1cc7fc7064894",
+      "bytes": 20925
+    },
+    {
+      "test": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "firefox",
+      "sha256": "16820d13d3d92f9bf38313ae738dd3ccddd94a2ab0ee33ed3683a12cc6c7c9cf",
+      "bytes": 3788
+    },
+    {
+      "test": "AC-3/4/6: / conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "b5dbb92a6d68b527785a3e74698b63a27360a9d44d1019602b91a69a41c142df",
+      "bytes": 6223
+    },
+    {
+      "test": "AC-3/4/6: /follow-the-click conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "b5dbb92a6d68b527785a3e74698b63a27360a9d44d1019602b91a69a41c142df",
+      "bytes": 6223
+    },
+    {
+      "test": "AC-3/4/6: /course conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "b616dc6c25f8ec991436ca8633b84d98e0d35059cf1d8903224ae7c2a1278e71",
+      "bytes": 5217
+    },
+    {
+      "test": "AC-3/4/6: /first-principles conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "9147277933aa56ff5a4bed353bc6c6a68aafe7a7cf11d1f1218cb36ffa1437a2",
+      "bytes": 8560
+    },
+    {
+      "test": "AC-3/4/6: /api-universe conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "ca1948aff0c0921264808610d16530c76fe4a2d9fac7d9c34a00f8a3c5eff62e",
+      "bytes": 22842
+    },
+    {
+      "test": "AC-3/4/6: /compare conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "844db11d6d1d4c603a9b58632fc49ae419c7f3715f98669c812ee16f868f5a7b",
+      "bytes": 14777
+    },
+    {
+      "test": "AC-3/4/6: /playground conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "1b5081c0b6f93ce7d100f1c6e5429a09611b4122e765a70e2fcf9c55a40f864b",
+      "bytes": 13208
+    },
+    {
+      "test": "AC-3/4/6: /events conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "a191d9254321c32675978d85b2b99c9b64e66ca6323404ef372e23825aaee00e",
+      "bytes": 5909
+    },
+    {
+      "test": "AC-3/4/6: /security conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "df2c18949e6c9b2ac5e4a62adeb31cd1e2da8ba6fac451e7fbe996861828b4e7",
+      "bytes": 6756
+    },
+    {
+      "test": "AC-3/4/6: /contracts conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "b510e97772fa6610af29129e2566db75c1e29576a5a6f11091b3617a61aa2394",
+      "bytes": 9468
+    },
+    {
+      "test": "AC-3/4/6: /systems conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "a076afd09f61fb3990e87a98932b484ba9cfb8fd53f4021b635b255f01548b5a",
+      "bytes": 21738
+    },
+    {
+      "test": "AC-3/4/6: /build-api conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "73d56aaae6145e2213ada90e957dc68a6f46597d46f99dfb2f198228fbc066f9",
+      "bytes": 4608
+    },
+    {
+      "test": "AC-3/4/6: /advanced conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "a4d8fbb21105cf0aeb30411d14a869ccf6d9b782883dbf4129f5972b2b5b31d3",
+      "bytes": 5314
+    },
+    {
+      "test": "AC-3/4/6: /reference conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "f59184fb9251b4d8ac3cc2fe87400d082ca1a4e2066c76cad7a1cc7fc7064894",
+      "bytes": 20925
+    },
+    {
+      "test": "AC-3/4/6: /challenges conserva contenido, foco y navegación en tres tamaños",
+      "project": "webkit",
+      "sha256": "16820d13d3d92f9bf38313ae738dd3ccddd94a2ab0ee33ed3683a12cc6c7c9cf",
+      "bytes": 3788
+    }
+  ],
+  "globalErrors": [],
+  "auditVulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "publicSourcesMatched": 14,
+  "earlierTechnicalPass": {
+    "sourceSHA256": "64c29b874ba103e829a8af86d11529d662861a777f1e33ecf37a6ba7bcc5b6a4",
+    "buildId": "FYJcsbunprH7ISnAsFKCC",
+    "stats": {
+      "startTime": "2026-10-23T17:05:13.276Z",
+      "duration": 196361.386,
+      "expected": 215,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "reasonForRepeat": "Updated the public availability text after completing the full prompt contrast."
+  }
+}

@@ -1,0 +1,17 @@
+"use client";
+import Link from "next/link";
+import { courseAreas, courseChapters } from "@/content/course";
+import { useCourseSummary } from "./course-summary";
+import { Sidebar } from "./sidebar";
+
+export function CourseOverview() {
+  const { status, finished, inProgress, challengesFinished, total, started, resume } = useCourseSummary();
+  return <div className="app-shell"><a className="skip-link" href="#experiment">Saltar al recorrido</a><Sidebar active="course" /><div className="main-shell"><header className="topbar"><span className="breadcrumb">The API Universe <span>/</span><strong>Tu recorrido</strong></span><span className="pill">Progreso local</span></header><main id="experiment" tabIndex={-1}>
+    <div className="page-heading"><div><span className="overline">APRENDE, EXPERIMENTA Y EXPLICA</span><h1>Tu recorrido<span>.</span></h1><p>De una función local a los sistemas distribuidos. Sigue el programa o elige un capítulo.</p></div></div>
+    <section className="panel course-hero" aria-labelledby="course-progress-heading"><div><h2 id="course-progress-heading">{finished} de {total} capítulos completados</h2><progress value={finished} max={total} aria-label="Progreso de capítulos disponibles" /><p>{inProgress > 0 ? `${inProgress} ${inProgress === 1 ? "capítulo en curso" : "capítulos en curso"}. ` : ""}Completa las actividades y comprueba tu razonamiento para avanzar.</p><p className="muted">Progreso local en este dispositivo. Visitar una página no completa un capítulo.</p></div><div className="course-actions"><Link className="primary-button" href={resume}>{started ? "Continuar mi recorrido" : "Empezar mi recorrido"}</Link><Link className="secondary-button" href={started ? "/first-principles?chapter=0" : "/follow-the-click"}>{started ? "Volver al capítulo 0" : "Ver un click HTTP real"}</Link></div></section>
+    <p className="operation-notice"><Link href="/challenges">{challengesFinished} de 7 desafíos completados</Link>. Evaluación independiente del progreso de capítulos.</p>
+    <section className="course-curriculum" aria-labelledby="course-chapters-heading"><div className="course-section-heading"><h2 id="course-chapters-heading">Los trece capítulos</h2><span>En orden, desde los primeros principios</span></div><div className="panel course-block"><ol start={0}>{courseChapters.map(chapter => <li key={chapter.id}><Link className="course-chapter" href={chapter.href} aria-description={`Capítulo ${chapter.id}`}><span className="course-number" aria-hidden="true">{String(chapter.id).padStart(2, "0")}</span><strong>{chapter.title}</strong><span className={`course-status ${status(chapter.id) === "Completado" ? "course-finished" : ""}`}>{status(chapter.id)}</span><span className="course-chapter-arrow" aria-hidden="true">→</span></Link></li>)}</ol></div></section>
+    <section aria-labelledby="course-areas-heading"><div className="course-section-heading"><h2 id="course-areas-heading">Explora por área</h2><span>Otra forma de acceder a los experimentos</span></div><div className="course-area-grid">{courseAreas.map(area => <Link className="panel course-area" key={area.title} href={area.href}><h3>{area.title}</h3><p>{area.description}</p><span className="course-area-action">Explorar área <span aria-hidden="true">→</span></span></Link>)}</div></section>
+    <footer>Aprender exige observar una consecuencia y poder explicarla.</footer>
+  </main></div></div>;
+}
